@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/c00c4af620.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portfolio de Rodrigo Llull</title>
+</head>
+
+<body>
+    <header class="navbar-container navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <p class="navbar-brand tituloNavbar">Rodrigo</p>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+            aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="dropdownContent collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a href="# " class="nav-link" role="button">INICIO</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#skills" class="nav-link" role="button">SKILLS</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#portfolio" class="nav-link" role="button">PORTFOLIO</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#contacto" class="nav-link" role="button">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- <div class="text-white">
+            <input type="checkbox" class="language">
+        </div> -->
+    </header>
+
+    <main>
+        <section class="text-white row justify-content-evenly mx-auto" id="inicio">
+            <section class="card bg-dark rounded-5 mb-5 mb-sm-0 col-sm-8 d-flex flex-column justify-content-around">
+                <header class="w-50 align-self-center">
+                    <img src="images/CV.jpg" class="card-img-top rounded-circle" alt="...">
+                </header>
+                <main class="align-self-center text-light">
+                    <h1 class="card-title">Rodrigo Llull</h1>
+                    <h4 class="card-text probando">Desarrollador de Software</h4>
+                </main>
+                <footer>
+                    <section class="d-flex justify-content-evenly px-5">
+                        <a href="https://www.linkedin.com/in/rodrigo-llull/" target="_blank"><i
+                                class="icon iconCard fa-brands fa-linkedin rounded-circle"></i></a>
+                        <a href="https://github.com/RodrigoLlull" target="_blank"><i
+                                class="icon iconCard fa-brands fa-github rounded-circle"></i></a>
+                    </section>
+                    <section class="d-flex justify-content-center mt-4">
+                        <a download="Rodrigo Llull CV" href="CV/Rodrigo Llull CV.pdf"><input type="button"
+                                class="btn btn-outline-light border border-2 rounded-2 p-3" value="Descargar CV"></a>
+                    </section>
+                </footer>
+            </section>
+
+            <section class="sobreMi text-white py-5 p-sm-0 col-sm-4 ">
+
+                <p class="px-4"><strong class="">Hola, soy Rodrigo Llull.</strong> <br> Desarrollador frontend con experiencia en la creación de experiencias web dinámicas y atractivas. Mi sólido conocimiento de HTML, CSS, JavaScript y Bootstrap me ha permitido trabajar en proyectos reales, tanto de forma independiente como colaborando estrechamente con clientes. <br> <br>
+
+                    Mi viaje en el mundo del desarrollo web comenzó de forma autodidacta, explorando diferentes tecnologías y participando en cursos que me han permitido adquirir un amplio conjunto de habilidades. Me especializo en comprender las necesidades del usuario y traducirlas en soluciones creativas y funcionales. <br> <br>
+                    
+                    Estoy emocionado por seguir creciendo como profesional y enfrentar nuevos desafíos en el mundo del desarrollo frontend. Siempre estoy buscando oportunidades para expandir mis conocimientos. <br> <br>
+                </p>
+
+                <div>
+                    <h3 class="p-4 pb-lg-4 ps-sm-5 text-center">Intereses</h3>
+                    <ul class="row mb-0 justify-content-center">
+                        <li class="interes"><i class="fa-solid fa-gamepad"></i>JUEGOS</li>
+                        <li class="interes"><i class="fa-solid fa-headphones"></i>MUSICA</li>
+                        <li class="interes"><i class="fa-solid fa-book"></i>LIBROS</li>
+                        <li class="interes"><i class="fa-solid fa-hand-fist"style="color: #ffffff;"></i>KARATE</li>
+                        <li class="interes"><i class="fa-solid fa-code"></i>CODIGO</li>
+                        <li class="interes"><i class="fa-solid fa-plane"></i>VIAJAR</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+        <section>
+            <a>
+                <i onclick="scrollTo()" class=" arrow fa-solid fa-angles-up border border-2 rounded-5 p-2"
+                    id="arrow"></i>
+            </a>
+        </section>
+
+        <section class="text-white py-5 row mt-sm-5 d-flex justify-content-evenly">
+            <h2 class="text-center">Habilidades</h2>
+            <section class="pt-sm-4 col-sm-5 col-11">
+                <h3 class="p-4 pb-lg-4 ps-sm-5 text-center">Habilidades Duras</h3>
+                <ul class="row mb-0 justify-content-center">
+                    
+                    <li class="skillItem bg-dark bg-opacity-75"><img class="technicalSkillLogo" src="images/html.png" alt="Logo HTML">HTML 5</li>
+                    <li class="skillItem bg-dark bg-opacity-75"><img class="technicalSkillLogo" src="images/css.png" alt="Logo CSS">CSS 3</li>
+                    <li class="skillItem bg-dark bg-opacity-75"><img class="technicalSkillLogo" src="images/js.png" alt="Logo JavaScript">JavaScript</li>
+                    <li class="skillItem bg-dark bg-opacity-75"><img class="technicalSkillLogo" src="images/bootstrap.png" alt="Logo Bootstrap">Bootstrap</li>
+                    <li class="skillItem bg-dark bg-opacity-75"><img class="technicalSkillLogo" src="images/git.png" alt="Logo Git">GIT</li>
+                    <li class="skillItem bg-dark bg-opacity-75"><img class="technicalSkillLogo" src="images/mysql.png" alt="Logo MySQL">MySQL</li>
+                    <li class="skillItem bg-dark bg-opacity-75"><img class="technicalSkillLogo" src="images/genexus.png" alt="Logo GeneXus">GeneXus</li>
+                </ul>
+            </section>
+
+            <section class="pt-sm-4 col-sm-5 col-11">
+                <h3 class="p-4 pb-lg-4 ps-sm-5 text-center">Habilidades Blandas</h3>
+                <ul class="row mb-0 justify-content-center">
+                    <li class="skillItem professionalSkill bg-dark"><i class="professionalSkillLogo fa-solid fa-people-group"></i>Trabajo en Equipo</li>
+                    <li class="skillItem professionalSkill bg-dark"><i class="professionalSkillLogo fa-solid fa-comments"></i>Comunicación</li>
+                    <li class="skillItem professionalSkill bg-dark"><i class="professionalSkillLogo fa-solid fa-temperature-arrow-down"></i>Autorregulación</li>
+                    <li class="skillItem professionalSkill bg-dark"><i class="professionalSkillLogo fa-solid fa-hat-wizard"></i>Creatividad</li>
+                    <li class="skillItem professionalSkill bg-dark"><i class="professionalSkillLogo fa-solid fa-magnifying-glass"></i>Pensamiento Crítico</li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="text-white p-5">
+            <h2 class="mb-5 text-center">PORTFOLIO</h2>
+            <section class="portfolio d-flex justify-content-center flex-wrap">
+                <!-- Proyecto JaP -->
+                <article class="containerPortfolioImages  me-sm-4 mb-4 ">
+                    <img src="images/ProyectoJaP.png" alt="" class="portfolioImages portfolioImageUno">
+                    <a class="portfolioArrow irACodigo" href="https://github.com/RodrigoLlull/Proyecto-JaP" target="_blank"><i class="portfolioIcono fa-solid fa-file-code"><span>ir al codigo</span></i></a>
+                    <a class="portfolioArrow irAPagina" href="https://rodrigollull.github.io/Proyecto-JaP/" target="_blank"><i class="portfolioIcono fa-solid fa-up-right-from-square"><span>ir a la pagina</span></i></a>
+                </article>
+                <!-- Formulario Tarjetas -->
+                <article class="containerPortfolioImages  ms-sm-4 mb-4">
+                    <img src="images/formularioTarjetas.png" class="portfolioImages portfolioImageDos">
+                    <a class="portfolioArrow irACodigo" href="https://github.com/RodrigoLlull/Formulario-Para-Tarjetas" target="_blank"><i class="portfolioIcono fa-solid fa-file-code"><span>ir al codigo</span></i></a>
+                    <a class="portfolioArrow irAPagina" href="https://rodrigollull.github.io/Formulario-Para-Tarjetas/" target="_blank"><i class="portfolioIcono fa-solid fa-up-right-from-square"><span>ir a la pagina</span></i></a>
+                </article>
+                <!-- Pet Shop -->
+                <article class="containerPortfolioImages  mb-4">
+                    <img src="images/petShop.png" class="portfolioImages portfolioImageTres">
+                    <a class="portfolioArrow irACodigo" href="https://github.com/RodrigoLlull/petshoop-responsive" target="_blank"><i class="portfolioIcono fa-solid fa-file-code"><span>ir al codigo</span></i></a>
+                    <a class="portfolioArrow irAPagina" href="https://rodrigollull.github.io/petshoop-responsive/" target="_blank"><i class="portfolioIcono fa-solid fa-up-right-from-square"><span>ir a la pagina</span></i></a>
+                </article>
+            </section>
+        </section>
+
+        <section class="text-white py-5 d-sm-flex flex-sm-column mb-sm-4" id="contacto">
+            <h2 class="mb-5 text-center">CONTACTO</h2>
+            <form action="" class="needs-validation align-self-sm-center px-5" id="form">
+                <section class="mb-4 sectionInput">
+                    <article>
+                        <input type="text"
+                            class="required invalid text-white form-control form-control-lg bg-dark border-0 rounded-4 p-3 inputForm"
+                            placeholder="Nombre" name="name">
+                    </article>
+                </section>
+                <section class="mb-4 sectionInput">
+                    <article>
+                        <input type="number"
+                            class="text-white form-control form-control-lg bg-dark border-0 rounded-4 p-3 inputForm"
+                            placeholder="Número de Telefóno" name="phone" id="phone">
+                    </article>
+                </section>
+                <section class="mb-4 sectionInput">
+                    <article>
+                        <input type="email"
+                            class="required text-white form-control form-control-lg bg-dark border-0 rounded-4 p-3 inputForm"
+                            placeholder="Dirección de Correo" name="email">
+                    </article>
+                </section>
+                <section class="mb-4 sectionInput">
+                    <article>
+                        <input type="text"
+                            class="required text-white form-control form-control-lg bg-dark border-0 rounded-4 p-3 inputForm"
+                            placeholder="Tema" name="subject">
+                    </article>
+                </section>
+                <section class="mb-4 sectionInput">
+                    <article>
+                        <textarea type="text" id="textArea"
+                            class="required text-white form-control form-control-lg bg-dark border-0 rounded-4 p-3 inputForm"
+                            placeholder="Mensaje" name="message"></textarea>
+                    </article>
+                </section>
+                <section class="d-flex justify-content-center">
+                    <input type="submit" class="fs-5 btn btn-outline-light border border-2 rounded-4 p-3 px-4"
+                        id="btnFormulario" value="ENVIAR">
+                </section>
+            </form>
+        </section>
+    </main>
+    <footer class="footer d-flex align-items-center">
+        <ul class="">
+            <li class="mb-3 d-flex">
+                <i class="icon fa-solid fa-envelope"></i><span
+                    class="iconText ms-2 my-auto">rodrigollullrodriguez@gmail.com</span>
+            </li>
+            <li class="d-flex">
+                <i class="icon fa-solid fa-phone"></i><span class="iconText ms-2 my-auto">095208731</span>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    emailjs.init('9psBSSJEz6M3_ZNOX')
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+</script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
+</script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="JS/script.js"></script>
+<script src="JS/form.js"></script>
+
+</html>
